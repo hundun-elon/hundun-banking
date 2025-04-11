@@ -1,4 +1,4 @@
-# Hundun `secured` Banking Platform
+# Hundun's `secured` Banking Platform
 
 this is a multi-stage challenge for assessing your skills in hacking the banking platforms
 

@@ -1,0 +1,113 @@
+/* Custom CSS for Hundun Banking Platform */
+
+:root {
+      --primary-color: #2962ff;
+      --secondary-color: #0039cb;
+      --accent-color: #768fff;
+      --dark-color: #1c2331;
+      --light-color: #f8f9fa;
+      --success-color: #43a047;
+      --warning-color: #ffa000;
+      --danger-color: #d32f2f;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      background-color: #f5f7fa;
+    }
+    
+    /* Screen Management */
+    .screen {
+      display: none;
+    }
+    
+    .screen.active {
+      display: block;
+    }
+    
+    /* Login Screen */
+    .login-container .card {
+      border: none;
+      border-radius: 10px;
+    }
+    
+    .logo-container {
+      margin-bottom: 2rem;
+    }
+    
+    .logo-container h1 {
+      font-weight: 700;
+      color: var(--primary-color);
+    }
+    
+    .challenge-hint {
+      background-color: rgba(41, 98, 255, 0.1);
+      border-left: 4px solid var(--primary-color);
+    }
+    
+    /* Dashboard */
+    .navbar-brand {
+      font-weight: 700;
+    }
+    
+    .card {
+      border: none;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    
+    .card-header {
+      font-weight: 600;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Flag Animation */
+    @keyframes flag-pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+    
+    #captured-flag {
+      font-family: monospace;
+      font-weight: bold;
+      background: #343a40;
+      color: #43a047;
+      padding: 8px 16px;
+      border-radius: 4px;
+      display: inline-block;
+      animation: flag-pulse 2s infinite;
+    }
+    
+    /* Progress Indicators */
+    .challenge-progress .badge {
+      font-size: 0.7rem;
+      font-weight: 500;
+    }
+    
+    .challenge-progress .badge.completed {
+      background-color: var(--success-color) !important;
+    }
+    
+    .challenge-progress .badge.active {
+      background-color: var(--primary-color) !important;
+    }
+    
+    /* Modal Styling */
+    #flagModal .modal-content {
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    
+    #modal-flag {
+      font-family: monospace;
+      letter-spacing: 1px;
+    }
+    
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .card-body {
+        padding: 1.25rem;
+      }
+    }
